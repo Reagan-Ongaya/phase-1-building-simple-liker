@@ -3,8 +3,8 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
-
+const el = document.getElementById("modal");
+el.addEventListener("click", Like, true);
 
 
 //------------------------------------------------------------------------------
@@ -23,3 +23,5 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+
+mimicServerCall();
